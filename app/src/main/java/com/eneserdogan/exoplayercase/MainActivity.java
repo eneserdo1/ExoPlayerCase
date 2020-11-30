@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements Player.EventListe
         simpleExoPlayer = ExoPlayerFactory.newSimpleInstance(MainActivity.this, trackSelector, loadControl);
         factory = new DefaultHttpDataSourceFactory("exoplayer_video");
 
-        MediaSource[] mediaSources = new MediaSource[2]; //The Size must change depending on the Uris
+        MediaSource[] mediaSources = new MediaSource[2]; 
 
         //Video Uri'ını fonksiyona göndererek video türüne göre mediaSource değerini alıyoruz
         MediaSource mediaSourceType = buildMediaSource(videoUrl, null);
